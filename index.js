@@ -47,6 +47,7 @@ function buildArgs (source, givenOutput, loop, initialVolume, showOsd) {
 		args.push('--vol', initialVolume);
 	}
 
+	args.push('--no-ghost-box');
 	args.push('-g');
 
 	return args;
