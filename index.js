@@ -158,6 +158,7 @@ function Omx (source, output, loop, initialVolume, showOsd) {
 	omxplayer.nextSubtitle = () => { writeStdin('m'); };
 	omxplayer.decSubDelay = () => { writeStdin('d'); };
 	omxplayer.incSubDelay = () => { writeStdin('f'); };
+	omxplayer.passThroughKey = (key) => { writeStdin(key); };
 
 	Object.defineProperty(omxplayer, 'running', {
 		get: () => { return open; }
