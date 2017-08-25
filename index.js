@@ -47,6 +47,8 @@ function buildArgs (source, givenOutput, loop, initialVolume, showOsd) {
 		args.push('--vol', initialVolume);
 	}
 
+	args.push('--align');
+	args.push('center');
 	args.push('--no-ghost-box');
 	args.push('-g');
 
